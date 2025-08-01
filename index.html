@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claydom - Complete AI Marketing Solutions | Phone, SEO, Social Media & Design</title>
+   
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Claydom delivers complete AI-powered marketing solutions including web development, SEO, social media management, automated calling, and creative design. Call (316) 215-8801 for your marketing consultation.">
+    <meta name="keywords" content="AI marketing agency, web development, SEO services, social media marketing, automated calling, digital marketing, brand design, marketing campaigns, lead generation, Kansas marketing agency">
+    <meta name="author" content="Claydom">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://claydom.com">
+   
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Claydom - Complete AI Marketing Solutions">
+    <meta property="og:description" content="Transform your business with complete AI marketing solutions: web development, SEO, social media, automated calling, and design. Call (316) 215-8801 for consultation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://claydom.com">
+    <meta property="og:image" content="https://claydom.com/og-image.jpg">
+    <meta property="og:site_name" content="Claydom">
+    <meta property="og:locale" content="en_US">
+   
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Claydom - Complete AI Marketing Solutions">
+    <meta name="twitter:description" content="Complete AI marketing solutions: web dev, SEO, social media, automated calling & design. Call (316) 215-8801">
+    <meta name="twitter:image" content="https://claydom.com/twitter-image.jpg">
+   
+    <!-- Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Claydom",
+      "description": "Complete AI-Powered Marketing Solutions and Digital Services",
+      "url": "https://claydom.com",
+      "telephone": "+13162158801",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Wichita",
+        "addressRegion": "KS",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.6872,
+        "longitude": -97.3301
+      },
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 37.6872,
+          "longitude": -97.3301
+        },
+        "geoRadius": "50000"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Complete AI Marketing Solutions",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Digital Marketing Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Web Development",
+                  "description": "Custom websites, e-commerce platforms, and web applications"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "SEO & Search Marketing",
+                  "description": "Search engine optimization and search advertising campaigns"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Social Media Management",
+                  "description": "Social media strategies, content creation, and advertising"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "AI-Powered Solutions",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "AI Marketing Campaigns",
+                  "description": "Data-driven marketing campaigns with AI analytics and targeting"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Automated Calling Systems",
+                  "description": "AI-powered automated calling for lead generation and follow-up"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Creative Design & Branding",
+                  "description": "Professional design services and brand identity development"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127"
+      },
+      "openingHours": "Mo-Fr 08:00-18:00",
+      "sameAs": [
+        "https://www.linkedin.com/company/claydom",
+        "https://twitter.com/claydom",
+        "https://www.facebook.com/claydom"
+      ]
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+            background: #1a1a1a;
+        }
+ 
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+ 
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #2a2a2a 0%, #3d3d3d 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+ 
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+ 
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            color: #e91e63;
+            transition: color 0.3s ease;
+        }
+ 
+        .logo:hover {
+            color: #f48fb1;
+        }
+ 
+        .logo::before {
+            content: '';
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(45deg, #e91e63, #f48fb1);
+            border-radius: 50%;
+            margin-right: 10px;
+            display: inline-block;
+        }
+ 
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+ 
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+ 
+        .nav-links a:hover {
+            color: #e91e63;
+        }
+ 
+        /* Hero CTA Section */
+        .hero-cta {
+            margin-bottom: 4rem;
+        }
+ 
+        /* Small Demo Widget */
+        .demo-widget-small {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: rgba(233, 30, 99, 0.1);
+            border: 1px solid rgba(233, 30, 99, 0.3);
+            border-radius: 25px;
+            padding: 0.75rem 1.5rem;
+            margin-top: 2rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s;
+        }
+ 
+        .demo-widget-small:hover {
+            background: rgba(233, 30, 99, 0.15);
+            border-color: rgba(233, 30, 99, 0.5);
+            transform: translateY(-2px);
+        }
+ 
+        .demo-label {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #f48fb1;
+            letter-spacing: 1px;
+        }
+ 
+        .demo-phone-simple {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+ 
+        .demo-phone-simple:hover {
+            color: #f48fb1;
+        }
+ 
+        .phone-icon {
+            animation: ring 1.5s infinite;
+        }
+ 
+        @keyframes ring {
+            0%, 50%, 100% { transform: rotate(0deg); }
+            10%, 30% { transform: rotate(-10deg); }
+            20%, 40% { transform: rotate(10deg); }
+        }
+ 
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+            position: relative;
+        }
+ 
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+ 
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            color: white;
+        }
+ 
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            color: #f48fb1;
+        }
+ 
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.8;
+        }
+ 
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #e91e63, #f48fb1);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+        }
+ 
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(233, 30, 99, 0.4);
+        }
+ 
+ 
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: #1a1a1a;
+        }
+ 
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: white;
+        }
+ 
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+ 
+        .service-card {
+            background: #2a2a2a;
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #3d3d3d;
+        }
+ 
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #e91e63, #f48fb1);
+            transition: left 0.3s;
+        }
+ 
+        .service-card:hover::before {
+            left: 0;
+        }
+ 
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(233, 30, 99, 0.2);
+            background: #333;
+        }
+ 
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #e91e63, #f48fb1);
+            border-radius: 50%;
+            color: white;
+        }
+ 
+        .service-icon svg {
+            width: 30px;
+            height: 30px;
+        }
+ 
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+ 
+        .service-card p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+ 
+        /* Voice Focus Section */
+        .voice-focus {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+            color: white;
+            text-align: center;
+        }
+ 
+        .voice-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+ 
+        .voice-feature {
+            background: rgba(233, 30, 99, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid rgba(233, 30, 99, 0.2);
+            transition: all 0.3s;
+        }
+ 
+        .voice-feature:hover {
+            background: rgba(233, 30, 99, 0.15);
+            transform: translateY(-5px);
+        }
+ 
+        .voice-feature h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #f48fb1;
+        }
+ 
+        /* Results Section */
+        .results {
+            padding: 80px 0;
+            background: #1a1a1a;
+        }
+ 
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+ 
+        .result-card {
+            background: #2a2a2a;
+            border-radius: 15px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            border: 1px solid #3d3d3d;
+            position: relative;
+            overflow: hidden;
+        }
+ 
+        .result-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #e91e63, #f48fb1);
+            transition: left 0.3s;
+        }
+ 
+        .result-card:hover::before {
+            left: 0;
+        }
+ 
+        .result-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(233, 30, 99, 0.2);
+            background: #333;
+        }
+ 
+        .result-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #e91e63;
+            margin-bottom: 0.5rem;
+        }
+ 
+        .result-label {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #f48fb1;
+            margin-bottom: 1rem;
+        }
+ 
+        .result-card p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+ 
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: #2a2a2a;
+            color: white;
+            text-align: center;
+        }
+ 
+        .contact-form {
+            max-width: 600px;
+            margin: 3rem auto 0;
+            display: grid;
+            gap: 1rem;
+        }
+ 
+        .form-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+ 
+        .contact-form input,
+        .contact-form textarea {
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: #3d3d3d;
+            color: white;
+            border: 1px solid #555;
+        }
+ 
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #aaa;
+        }
+ 
+        .contact-form button {
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #e91e63, #f48fb1);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+ 
+        .contact-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+        }
+ 
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid #3d3d3d;
+        }
+ 
+        /* Mobile Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+ 
+            .demo-widget-small {
+                padding: 0.6rem 1.2rem;
+                margin: 1.5rem 1rem 0;
+            }
+ 
+            .demo-phone-simple {
+                font-size: 1rem;
+            }
+ 
+            .demo-label {
+                font-size: 0.8rem;
+            }
+ 
+            .hero {
+                padding: 60px 0 40px;
+            }
+ 
+            .hero h1 {
+                font-size: 2.2rem;
+                line-height: 1.2;
+            }
+ 
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+ 
+            .hero p {
+                font-size: 1rem;
+                padding: 0 10px;
+            }
+ 
+            .section-title {
+                font-size: 1.8rem;
+            }
+ 
+            .services {
+                padding: 50px 0;
+            }
+ 
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+ 
+            .service-card {
+                padding: 2rem 1.5rem;
+            }
+ 
+ 
+            .voice-focus {
+                padding: 50px 0;
+            }
+ 
+            .voice-features {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+ 
+            .voice-feature {
+                padding: 1.5rem;
+            }
+ 
+            .results {
+                padding: 50px 0;
+            }
+ 
+            .results-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+ 
+            .result-card {
+                padding: 2rem 1.5rem;
+            }
+ 
+            .result-number {
+                font-size: 2.5rem;
+            }
+ 
+            .contact {
+                padding: 50px 0;
+            }
+ 
+            .contact-form {
+                margin: 2rem auto 0;
+            }
+ 
+            .form-group {
+                grid-template-columns: 1fr;
+            }
+ 
+        }
+ 
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+ 
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+ 
+            .demo-widget-small {
+                padding: 0.5rem 1rem;
+                gap: 0.5rem;
+            }
+ 
+            .demo-phone-simple {
+                font-size: 0.9rem;
+            }
+ 
+            .service-card {
+                padding: 1.5rem 1rem;
+            }
+ 
+            .section-title {
+                font-size: 1.6rem;
+            }
+        }
+ 
+        /* Subtle animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s;
+        }
+ 
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">Claydom</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#voice">Voice AI</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+ 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Complete AI-Powered Marketing Solutions</h1>
+            <div class="subtitle">Automated Calling • Social Media • SEO • Design</div>
+            <p>Transform your business with our comprehensive end-to-end marketing solutions. From AI-driven campaigns and web development to social media management and automated calling systems - we deliver everything you need to dominate your market.</p>
+            <div class="hero-cta">
+                <a href="#contact" class="cta-button">Get Started Today</a>
+            </div>
+           
+            <!-- Demo Widget -->
+            <div class="demo-widget-small">
+                <span class="demo-label">DEMO:</span>
+                <a href="tel:3162158801" class="demo-phone-simple">
+                    <span class="phone-icon">📞</span>
+                    (316) 215-8801
+                </a>
+            </div>
+           
+        </div>
+    </section>
+ 
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title fade-in">AI Voice-First Marketing Solutions</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <h3>AI Inbound Call Automation</h3>
+                    <p>Intelligent call routing systems, AI customer service bots, and 24/7 automated support that handles customer inquiries naturally with advanced voice recognition technology.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+                        </svg>
+                    </div>
+                    <h3>AI Outbound Call Campaigns</h3>
+                    <p>Automated sales calls, AI-powered lead nurturing, and follow-up campaigns that convert prospects with personalized voice interactions and intelligent conversation flows.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                            <polyline points="9,22 9,12 15,12 15,22"/>
+                        </svg>
+                    </div>
+                    <h3>Custom Web Development</h3>
+                    <p>Voice-AI integrated websites, e-commerce platforms with voice search, and web applications built with cutting-edge technology optimized for voice interactions and conversions.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <h3>SEO & Voice Search Optimization</h3>
+                    <p>AI-driven SEO strategies optimized for voice search queries, local search domination, and search advertising campaigns that capture voice-activated searches.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="9" cy="9" r="2"/>
+                            <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                        </svg>
+                    </div>
+                    <h3>Social Media & Voice Content</h3>
+                    <p>AI-powered social media strategies, voice content creation, community management, and advertising campaigns that integrate voice marketing across all platforms.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Voice-Enhanced Brand Design</h3>
+                    <p>Professional logo design, brand identity, and marketing materials optimized for voice-first customer interactions using AI-powered design tools for memorable brand presence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Voice Focus Section -->
+    <section id="voice" class="voice-focus">
+        <div class="container">
+            <h2 class="section-title fade-in">Why Choose Claydom for AI Voice Marketing Solutions?</h2>
+            <p class="fade-in" style="font-size: 1.2rem; margin-bottom: 3rem;">Leading AI voice automation specialists delivering comprehensive marketing solutions - from intelligent inbound/outbound calling to voice-optimized web development and SEO that drive real results</p>
+            <div class="voice-features">
+                <div class="voice-feature fade-in">
+                    <h4>AI Voice-First Marketing Ecosystem</h4>
+                    <p>Everything you need with voice at the center - intelligent calling systems, voice-optimized web development, SEO, social media, and design services working together seamlessly</p>
+                </div>
+                <div class="voice-feature fade-in">
+                    <h4>Advanced AI Voice Technology</h4>
+                    <p>Cutting-edge voice AI that sounds natural and converts - using machine learning to optimize call timing, conversation flows, and voice interactions for maximum results</p>
+                </div>
+                <div class="voice-feature fade-in">
+                    <h4>Voice AI Specialists</h4>
+                    <p>Expert team specializing in AI voice automation, inbound/outbound calling systems, plus comprehensive web development, SEO, social media, and design expertise</p>
+                </div>
+                <div class="voice-feature fade-in">
+                    <h4>24/7 Marketing Automation</h4>
+                    <p>Always-on marketing systems that work while you sleep - automated email campaigns, social posting, lead nurturing, and customer follow-up</p>
+                </div>
+                <div class="voice-feature fade-in">
+                    <h4>Integrated Marketing Strategy</h4>
+                    <p>Cohesive marketing approach across all channels - your website, social media, search rankings, and brand identity all work together</p>
+                </div>
+                <div class="voice-feature fade-in">
+                    <h4>Advanced Analytics & Tracking</h4>
+                    <p>Comprehensive performance tracking across all marketing channels with AI-powered insights and actionable recommendations for continuous improvement</p>
+                </div>
+                <div class="voice-feature fade-in">
+                    <h4>Scalable Growth Solutions</h4>
+                    <p>Marketing systems that grow with your business - from startup to enterprise, our solutions scale to meet your evolving needs and ambitions</p>
+                </div>
+                <div class="voice-feature fade-in">
+                    <h4>Proven ROI & Results</h4>
+                    <p>Track record of delivering measurable results - increased website traffic, higher search rankings, more leads, and improved conversion rates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Results Section -->
+    <section id="results" class="results">
+        <div class="container">
+            <h2 class="section-title fade-in">Proven Results for Our Clients</h2>
+            <div class="results-grid">
+                <div class="result-card fade-in">
+                    <div class="result-number">300%</div>
+                    <div class="result-label">Increase in Leads</div>
+                    <p>AI voice automation + marketing transformation including intelligent calling systems, voice-optimized websites, and integrated campaigns</p>
+                </div>
+                <div class="result-card fade-in">
+                    <div class="result-number">500+</div>
+                    <div class="result-label">Monthly Qualified Leads</div>
+                    <p>AI voice-powered lead generation through intelligent inbound/outbound calling, website optimization, and targeted voice campaigns</p>
+                </div>
+                <div class="result-card fade-in">
+                    <div class="result-number">95%</div>
+                    <div class="result-label">Client Satisfaction Rate</div>
+                    <p>Voice-enhanced multi-channel campaigns combining AI calling systems, web development, SEO, social media, and automation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Ready to Dominate Your Market with Complete AI Marketing?</h2>
+            <p class="fade-in" style="font-size: 1.2rem; margin-bottom: 3rem;">Let's discuss how our end-to-end marketing solutions can accelerate your growth, increase your online presence, and drive more customers to your business</p>
+            <form class="contact-form fade-in">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="company" placeholder="Company Name">
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                </div>
+                <textarea name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+                <button type="submit">Get Your Free AI Voice Marketing Consultation</button>
+            </form>
+        </div>
+    </section>
+ 
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Claydom. All rights reserved. | Complete AI Marketing Solutions - Web Development, SEO, Social Media & Design Services | Dallas, Texas</p>
+        </div>
+    </footer>
+ 
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+ 
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+ 
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+ 
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+ 
+        // Contact form handling
+        document.querySelector('.contact-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+           
+            const name = this.querySelector('input[name="name"]').value;
+            const email = this.querySelector('input[name="email"]').value;
+            const company = this.querySelector('input[name="company"]').value;
+            const phone = this.querySelector('input[name="phone"]').value;
+            const message = this.querySelector('textarea[name="message"]').value;
+           
+            if (!name || !email || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+           
+            const notificationBody = `Name: ${name}\nEmail: ${email}${company ? `\nCompany: ${company}` : ''}${phone ? `\nPhone: ${phone}` : ''}\nMessage: ${message}`;
+           
+            fetch('https://ntfy.sh/Call_incoming', {
+                method: 'POST',
+                headers: {
+                    'Title': 'New AI Voice Marketing Request',
+                    'Priority': 'high',
+                    'Tags': 'phone,marketing,voice-ai'
+                },
+                body: notificationBody
+            });
+           
+            this.innerHTML = `
+                <div class="thank-you-message">
+                    <div class="thank-you-icon">🎉</div>
+                    <h3>Thank You!</h3>
+                    <p>We've received your AI voice marketing consultation request.</p>
+                    <p>We'll contact you within 24 hours to discuss your needs.</p>
+                </div>
+            `;
+        });
+ 
+        // Header background on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(42, 42, 42, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, #2a2a2a 0%, #3d3d3d 100%)';
+                header.style.backdropFilter = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
