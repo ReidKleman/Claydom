@@ -231,6 +231,8 @@
             margin-top: 2rem;
             backdrop-filter: blur(10px);
             transition: all 0.3s;
+            min-width: 280px;
+            justify-content: center;
         }
  
         .demo-widget-small:hover {
@@ -255,6 +257,12 @@
             font-weight: bold;
             font-size: 1.1rem;
             transition: color 0.3s;
+            white-space: nowrap;
+        }
+ 
+        .phone-number {
+            font-family: 'Courier New', monospace;
+            letter-spacing: 0.5px;
         }
  
         .demo-phone-simple:hover {
@@ -561,6 +569,39 @@
             box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
         }
  
+        .thank-you-message {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: rgba(233, 30, 99, 0.1);
+            border: 1px solid rgba(233, 30, 99, 0.3);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+ 
+        .thank-you-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1rem;
+            color: #4CAF50;
+        }
+ 
+        .thank-you-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+ 
+        .thank-you-message h3 {
+            font-size: 2rem;
+            color: #f48fb1;
+            margin-bottom: 1rem;
+        }
+ 
+        .thank-you-message p {
+            color: #ccc;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+ 
         /* Footer */
         footer {
             background: #1a1a1a;
@@ -577,12 +618,20 @@
             }
  
             .demo-widget-small {
-                padding: 0.6rem 1.2rem;
+                flex-direction: column;
+                gap: 0.5rem;
+                padding: 1rem 1.5rem;
                 margin: 1.5rem 1rem 0;
+                min-width: auto;
+                width: auto;
             }
  
             .demo-phone-simple {
                 font-size: 1rem;
+            }
+ 
+            .phone-number {
+                font-size: 0.95rem;
             }
  
             .demo-label {
@@ -679,12 +728,17 @@
             }
  
             .demo-widget-small {
-                padding: 0.5rem 1rem;
-                gap: 0.5rem;
+                padding: 0.75rem 1.25rem;
+                gap: 0.4rem;
             }
  
             .demo-phone-simple {
                 font-size: 0.9rem;
+            }
+ 
+            .phone-number {
+                font-size: 0.85rem;
+                letter-spacing: 0.3px;
             }
  
             .service-card {
@@ -738,9 +792,11 @@
             <!-- Demo Widget -->
             <div class="demo-widget-small">
                 <span class="demo-label">DEMO:</span>
-                <a href="tel:3162158801" class="demo-phone-simple">
-                    <span class="phone-icon">📞</span>
-                    (316) 215-8801
+                <a href="tel:+13162158801" class="demo-phone-simple">
+                    <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <span class="phone-number">(316) 215-8801</span>
                 </a>
             </div>
            
@@ -968,7 +1024,12 @@
            
             this.innerHTML = `
                 <div class="thank-you-message">
-                    <div class="thank-you-icon">🎉</div>
+                    <div class="thank-you-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"/>
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                    </div>
                     <h3>Thank You!</h3>
                     <p>We've received your AI voice marketing consultation request.</p>
                     <p>We'll contact you within 24 hours to discuss your needs.</p>
