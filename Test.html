@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages CSS Test</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 50px;
+        }
+
+```
+    .test-container {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        color: #e91e63;
+        margin-bottom: 2rem;
+    }
+    
+    .test-box {
+        background: #2a2a2a;
+        padding: 2rem;
+        border-radius: 15px;
+        margin: 2rem 0;
+        border: 2px solid #e91e63;
+        transition: all 0.3s;
+    }
+    
+    .test-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(233, 30, 99, 0.3);
+    }
+    
+    .success {
+        color: #4CAF50;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .failure {
+        color: #f44336;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="test-container">
+        <h1>GitHub Pages CSS Test</h1>
+
+```
+    <div class="test-box">
+        <h2 id="css-status">Testing CSS Loading...</h2>
+        <p>If you can see styled backgrounds, colors, and this box has a pink border, your CSS is working!</p>
+    </div>
+    
+    <div class="test-box">
+        <h3>What you should see if CSS is working:</h3>
+        <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+            <li>Dark gradient background</li>
+            <li>Pink/magenta colored heading</li>
+            <li>Gray boxes with pink borders</li>
+            <li>Hover effects on boxes</li>
+            <li>Modern typography</li>
+        </ul>
+    </div>
+    
+    <div class="test-box">
+        <h3>If CSS is NOT working, you'll see:</h3>
+        <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+            <li>Plain white background</li>
+            <li>Black text</li>
+            <li>Default browser fonts</li>
+            <li>No styling or effects</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    // Test if CSS is loaded by checking computed styles
+    window.addEventListener('load', function() {
+        const testElement = document.querySelector('.test-container');
+        const computedStyle = window.getComputedStyle(testElement);
+        const statusElement = document.getElementById('css-status');
+        
+        if (computedStyle.textAlign === 'center') {
+            statusElement.textContent = '✅ CSS is loading correctly!';
+            statusElement.className = 'success';
+        } else {
+            statusElement.textContent = '❌ CSS is NOT loading!';
+            statusElement.className = 'failure';
+        }
+    });
+</script>
+```
+
+</body>
+</html>
