@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claydom Creative- AI Voice Marketing Solutions</title>
+    <title>Claydom - AI Call Automation Solutions</title>
     
-    <meta name="description" content="Claydom delivers AI voice marketing solutions including inbound/outbound calling, web development, SEO, and design services.">
-    <meta name="keywords" content="AI voice marketing, inbound calls, outbound calls, web development, SEO, social media marketing">
+    <meta name="description" content="Claydom delivers AI call automation solutions including 24/7 inbound call handling, outbound sales automation, lead generation, and intelligent call routing systems.">
+    <meta name="keywords" content="AI call automation, inbound call automation, outbound sales calls, lead generation, call routing, phone system audit">
     <meta name="author" content="Claydom">
     <meta name="robots" content="index, follow">
     
@@ -289,6 +289,97 @@
             line-height: 1.6;
         }
 
+        /* Calculator Section */
+        .calculator {
+            padding: 80px 0;
+            background: #2a2a2a;
+            color: white;
+            text-align: center;
+        }
+
+        .calculator-form {
+            max-width: 600px;
+            margin: 3rem auto 0;
+            background: #3d3d3d;
+            padding: 3rem;
+            border-radius: 15px;
+            border: 1px solid #555;
+        }
+
+        .calc-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .calc-input {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .calc-input label {
+            color: #f48fb1;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .calc-input input, .calc-input select {
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: #1a1a1a;
+            color: white;
+            border: 1px solid #666;
+        }
+
+        .calc-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .calc-checkbox input[type="checkbox"] {
+            transform: scale(1.2);
+        }
+
+        .calc-button {
+            padding: 15px 40px;
+            background: linear-gradient(45deg, #e91e63, #f48fb1);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 2rem;
+        }
+
+        .calc-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+        }
+
+        .calc-results {
+            display: none;
+            background: rgba(233, 30, 99, 0.1);
+            border: 1px solid rgba(233, 30, 99, 0.3);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .savings-amount {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #e91e63;
+            margin-bottom: 1rem;
+        }
+
         /* Contact Section */
         .contact {
             padding: 80px 0;
@@ -341,6 +432,38 @@
         .contact-form button:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+        }
+
+        .audit-highlight {
+            background: rgba(233, 30, 99, 0.1);
+            border: 2px solid rgba(233, 30, 99, 0.4);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 0 5px rgba(233, 30, 99, 0.2); }
+            to { box-shadow: 0 0 20px rgba(233, 30, 99, 0.4); }
+        }
+
+        .audit-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .audit-checkbox input[type="checkbox"] {
+            transform: scale(1.5);
+            accent-color: #e91e63;
+        }
+
+        .audit-checkbox label {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #f48fb1;
         }
 
         .thank-you-message {
@@ -430,6 +553,45 @@
             .result-number {
                 font-size: 2.5rem;
             }
+
+            .calculator-form {
+                padding: 2rem 1.5rem;
+            }
+
+            .calc-row {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .calc-input label {
+                font-size: 0.85rem;
+            }
+
+            .calc-input input, .calc-input select {
+                padding: 12px;
+                font-size: 0.95rem;
+            }
+
+            .calc-button {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+
+            .calc-results {
+                padding: 1.5rem;
+            }
+
+            .savings-amount {
+                font-size: 2rem;
+            }
+
+            .audit-highlight {
+                padding: 1.5rem;
+            }
+
+            .audit-checkbox label {
+                font-size: 1rem;
+            }
         }
 
         @media (max-width: 480px) {
@@ -443,6 +605,45 @@
 
             .section-title {
                 font-size: 1.6rem;
+            }
+
+            .calculator-form {
+                padding: 1.5rem 1rem;
+                margin: 2rem auto 0;
+            }
+
+            .calc-input label {
+                font-size: 0.8rem;
+            }
+
+            .calc-input input, .calc-input select {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+
+            .calc-button {
+                padding: 10px 25px;
+                font-size: 0.95rem;
+            }
+
+            .savings-amount {
+                font-size: 1.8rem;
+            }
+
+            .audit-highlight {
+                padding: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .audit-checkbox {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .audit-checkbox label {
+                font-size: 0.9rem;
+                line-height: 1.3;
             }
         }
 
@@ -461,12 +662,12 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Claydom Creative</div>
+            <div class="logo">Claydom</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#voice">Voice AI</a></li>
-                <li><a href="#results">Results</a></li>
+                <li><a href="#voice">AI Features</a></li>
+                <li><a href="#calculator">Calculator</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -474,9 +675,9 @@
 
     <section id="home" class="hero">
         <div class="container">
-            <h1>AI Voice Marketing Solutions</h1>
-            <div class="subtitle">Inbound and Outbound Call Automation + Digital Marketing</div>
-            <p>Transform your business with intelligent voice automation systems, SEO + LLMO, and comprehensive marketing solutions that drive real results.</p>
+            <h1>AI Call Automation Solutions</h1>
+            <div class="subtitle">24/7 Sales Funnel • Outbound Lead Generation • Smart Call Routing</div>
+            <p>Never lose another lead with our AI call automation. Handle thousands of calls daily, filter spam automatically, and run personalized campaigns with multi-language support - all while you sleep.</p>
             <a href="#contact" class="cta-button">Get Started Today</a>
             
             <div class="demo-widget">
@@ -488,31 +689,31 @@
 
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title fade-in">Our AI Voice Marketing Services</h2>
+            <h2 class="section-title fade-in">Our AI Call Automation Services</h2>
             <div class="services-grid">
                 <div class="service-card fade-in">
-                    <h3>AI Inbound Call Automation</h3>
-                    <p>Intelligent call routing systems and 24/7 automated customer support that handles inquiries naturally with advanced voice recognition technology.</p>
+                    <h3>24/7 Inbound Call Automation</h3>
+                    <p>Never miss a lead again. Our AI handles all incoming calls 24/7 with smart routing, spam filtering, and natural conversations that convert prospects into customers.</p>
                 </div>
                 <div class="service-card fade-in">
-                    <h3>AI Outbound Call Campaigns</h3>
-                    <p>Automated sales calls and lead nurturing campaigns that convert prospects with personalized voice interactions and intelligent conversation flows.</p>
+                    <h3>Outbound Sales & Lead Generation</h3>
+                    <p>Call thousands daily with personalized messages. Never miss follow-ups with continuous optimization like digital advertising, plus niche campaigns with zero overhead.</p>
                 </div>
                 <div class="service-card fade-in">
-                    <h3>Custom Web Development</h3>
-                    <p>Voice-optimized websites and applications built with cutting-edge technology for superior user experience and conversion optimization.</p>
+                    <h3>Smart Call Routing & System Optimization</h3>
+                    <p>Improve existing systems with intelligent routing, campaign targeting with unique phone reps per campaign, and multi-language support for global reach.</p>
                 </div>
                 <div class="service-card fade-in">
-                    <h3>SEO and Search Marketing</h3>
-                    <p>Voice search optimization and SEO strategies that capture voice-activated searches and improve your online visibility.</p>
+                    <h3>Current System Audit & Analysis</h3>
+                    <p>Free automated audit of your existing phone systems. We analyze call patterns, identify bottlenecks, and provide optimization recommendations.</p>
                 </div>
                 <div class="service-card fade-in">
-                    <h3>Social Media Marketing</h3>
-                    <p>Comprehensive social media strategies and content creation that integrates with your voice marketing campaigns for maximum impact.</p>
+                    <h3>AI-Powered Call Analytics</h3>
+                    <p>Advanced analytics and continuous optimization of closing rates. Real-time insights into call performance, conversion tracking, and ROI measurement.</p>
                 </div>
                 <div class="service-card fade-in">
-                    <h3>Brand Design and Identity</h3>
-                    <p>Professional logo design and brand identity development optimized for voice-first customer interactions and digital presence.</p>
+                    <h3>Custom Voice AI Training</h3>
+                    <p>Train your AI agents on your specific products, services, and brand voice. Personalized conversation flows that match your business requirements perfectly.</p>
                 </div>
             </div>
         </div>
@@ -520,40 +721,40 @@
 
     <section id="voice" class="voice-focus">
         <div class="container">
-            <h2 class="section-title fade-in">Why Choose Claydom for AI Voice Marketing?</h2>
-            <p class="fade-in" style="font-size: 1.2rem; margin-bottom: 3rem;">Leading AI voice automation specialists delivering comprehensive marketing solutions that drive real results</p>
+            <h2 class="section-title fade-in">Why Choose Claydom for AI Call Automation?</h2>
+            <p class="fade-in" style="font-size: 1.2rem; margin-bottom: 3rem;">Leading AI call automation specialists delivering 24/7 sales funnels, outbound lead generation, and intelligent call management</p>
             <div class="voice-features">
                 <div class="voice-feature fade-in">
-                    <h4>AI Voice-First Marketing</h4>
-                    <p>Everything you need with voice at the center - intelligent calling systems, voice-optimized web development, SEO, and social media working together seamlessly</p>
+                    <h4>24/7 Sales Funnel</h4>
+                    <p>No customer ever has to hold again. Our AI handles unlimited concurrent calls, qualifying leads and booking appointments while you sleep.</p>
                 </div>
                 <div class="voice-feature fade-in">
-                    <h4>Advanced AI Voice Technology</h4>
-                    <p>Cutting-edge voice AI that sounds natural and converts using machine learning to optimize call timing and conversation flows for maximum results</p>
+                    <h4>Intelligent Spam Filtering</h4>
+                    <p>Automatically filter spam calls and route qualified leads to your team. Advanced AI identifies genuine prospects and eliminates time-wasters.</p>
                 </div>
                 <div class="voice-feature fade-in">
-                    <h4>Voice AI Specialists</h4>
-                    <p>Expert team specializing in AI voice automation, inbound and outbound calling systems, plus comprehensive web development and SEO expertise</p>
+                    <h4>Campaign Targeting</h4>
+                    <p>Deploy unique phone representatives per campaign with specialized training. Target specific niches with personalized messaging and optimized conversion flows.</p>
                 </div>
                 <div class="voice-feature fade-in">
-                    <h4>24/7 Marketing Automation</h4>
-                    <p>Always-on marketing systems that work while you sleep with automated campaigns, social posting, lead nurturing, and customer follow-up</p>
+                    <h4>Multi-Language Support</h4>
+                    <p>Serve global markets with AI agents that speak multiple languages fluently. Expand your reach without hiring multilingual staff.</p>
                 </div>
                 <div class="voice-feature fade-in">
-                    <h4>Integrated Marketing Strategy</h4>
-                    <p>Cohesive marketing approach across all channels where your website, social media, search rankings, and brand identity all work together</p>
+                    <h4>Massive Outbound Scale</h4>
+                    <p>Call thousands per day with personalized messages. Never miss a follow-up with automated scheduling and continuous optimization of closing rates.</p>
                 </div>
                 <div class="voice-feature fade-in">
-                    <h4>Advanced Analytics and Tracking</h4>
-                    <p>Comprehensive performance tracking across all marketing channels with AI-powered insights and actionable recommendations for continuous improvement</p>
+                    <h4>Niche Campaign Deployment</h4>
+                    <p>Run specialized campaigns for different market segments with no extra overhead. Each campaign gets dedicated AI training and optimized messaging.</p>
                 </div>
                 <div class="voice-feature fade-in">
-                    <h4>Scalable Growth Solutions</h4>
-                    <p>Marketing systems that grow with your business from startup to enterprise, our solutions scale to meet your evolving needs and ambitions</p>
+                    <h4>Continuous Optimization</h4>
+                    <p>Like digital advertising, our AI continuously optimizes closing rates, call timing, and conversation flows for maximum ROI and conversion performance.</p>
                 </div>
                 <div class="voice-feature fade-in">
-                    <h4>Proven ROI and Results</h4>
-                    <p>Track record of delivering measurable results including increased website traffic, higher search rankings, more leads, and improved conversion rates</p>
+                    <h4>System Integration & Audits</h4>
+                    <p>Seamlessly integrate with existing CRM and phone systems. Free automated audits identify optimization opportunities in your current setup.</p>
                 </div>
             </div>
         </div>
@@ -582,20 +783,73 @@
         </div>
     </section>
 
+    <section id="calculator" class="calculator">
+        <div class="container">
+            <h2 class="section-title fade-in">Savings Estimate Calculator</h2>
+            <p class="fade-in" style="font-size: 1.2rem; margin-bottom: 3rem;">Get an instant estimate for AI call automation costs</p>
+            <div class="calculator-form fade-in">
+                <div class="calc-row">
+                    <div class="calc-input">
+                        <label for="currentCalls">Current Monthly Calls</label>
+                        <input type="number" id="currentCalls" placeholder="e.g., 500" required>
+                    </div>
+                    <div class="calc-input">
+                        <label for="avgCallTime">Avg Call Duration (minutes)</label>
+                        <input type="number" id="avgCallTime" placeholder="e.g., 5" required>
+                    </div>
+                </div>
+                <div class="calc-row">
+                    <div class="calc-input">
+                        <label for="staffCost">Current Monthly Cost ($)</label>
+                        <input type="number" id="staffCost" placeholder="e.g., 2500" required>
+                    </div>
+                    <div class="calc-input">
+                        <label for="businessType">Business Type</label>
+                        <select id="businessType" required>
+                            <option value="">Select your industry</option>
+                            <option value="1.2">Real Estate</option>
+                            <option value="1.5">Healthcare</option>
+                            <option value="1.3">Legal Services</option>
+                            <option value="1.1">E-commerce</option>
+                            <option value="1.4">Financial Services</option>
+                            <option value="1.0">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="button" class="calc-button" onclick="calculateEstimate()">Get My Estimate</button>
+                <div id="calcResults" class="calc-results">
+                    <div class="savings-amount" id="savingsAmount">$0</div>
+                    <p><strong>Monthly Cost Estimate</strong></p>
+                    <p>Based on your current call volume and automation requirements</p>
+                    <p style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.8;">
+                        Estimate based on industry averages and typical automation deployment
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title fade-in">Ready to Transform Your Business?</h2>
-            <p class="fade-in" style="font-size: 1.2rem; margin-bottom: 3rem;">Get started with AI voice marketing solutions that drive real results for your business.</p>
+            <p class="fade-in" style="font-size: 1.2rem; margin-bottom: 3rem;">Get started with AI call automation that transforms your business operations.</p>
             <form class="contact-form fade-in">
+                <div class="audit-highlight">
+                    <div class="audit-checkbox">
+                        <input type="checkbox" id="requestAudit" name="requestAudit">
+                        <label for="requestAudit">🎯 FREE SYSTEM AUDIT - Get a complete analysis of your current phone system!</label>
+                    </div>
+                    <p style="color: #ccc; font-size: 0.95rem; margin: 0;">We'll analyze your call patterns, identify bottlenecks, and provide optimization recommendations at no cost.</p>
+                </div>
                 <div class="form-group">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                 </div>
                 <div class="form-group">
                     <input type="text" name="company" placeholder="Company Name">
-                    <input type="tel" name="phone" placeholder="Phone Number">
+                    <input type="tel" name="phone" placeholder="Current Phone Number" required>
                 </div>
-                <textarea name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+                <textarea name="message" placeholder="Tell us about your current call handling challenges..." rows="5" required></textarea>
                 <button type="submit">Get Your Free Consultation</button>
             </form>
         </div>
@@ -640,6 +894,51 @@
             observer.observe(el);
         });
 
+        // Calculator functions
+
+        function calculateEstimate() {
+            const currentCalls = parseFloat(document.getElementById('currentCalls').value);
+            const avgCallTime = parseFloat(document.getElementById('avgCallTime').value);
+            const staffCost = parseFloat(document.getElementById('staffCost').value);
+            const businessType = parseFloat(document.getElementById('businessType').value);
+
+            if (!currentCalls || !avgCallTime || !staffCost || !businessType) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            // Complex calculation to hide the $1/call baseline
+            const currentMonthlyCost = staffCost;
+            
+            // AI automation efficiency (60-80% cost reduction)
+            const automationEfficiency = 0.7 * businessType;
+            const monthlySavings = currentMonthlyCost * automationEfficiency;
+
+            document.getElementById('savingsAmount').textContent = '$' + Math.round(monthlySavings).toLocaleString();
+            document.getElementById('calcResults').style.display = 'block';
+
+            // Send ntfy notification
+            const calculatorData = {
+                calls: currentCalls,
+                duration: avgCallTime,
+                cost: staffCost,
+                industry: document.getElementById('businessType').selectedOptions[0].text,
+                estimate: Math.round(monthlySavings)
+            };
+
+            const notificationBody = `Estimate Calculator Used!\n\nMonthly Calls: ${calculatorData.calls}\nAvg Duration: ${calculatorData.duration} min\nCurrent Monthly Cost: $${calculatorData.cost}\nIndustry: ${calculatorData.industry}\nCost Estimate: $${calculatorData.estimate}`;
+
+            fetch('https://ntfy.sh/Call_incoming', {
+                method: 'POST',
+                headers: {
+                    'Title': 'Cost Calculator - New Lead',
+                    'Priority': 'high',
+                    'Tags': 'calculator,lead,money'
+                },
+                body: notificationBody
+            });
+        }
+
         // Contact form handling
         document.querySelector('.contact-form').addEventListener('submit', async function(e) {
             e.preventDefault();
@@ -649,13 +948,14 @@
             const company = this.querySelector('input[name="company"]').value;
             const phone = this.querySelector('input[name="phone"]').value;
             const message = this.querySelector('textarea[name="message"]').value;
+            const requestAudit = this.querySelector('input[name="requestAudit"]').checked;
             
-            if (!name || !email || !message) {
+            if (!name || !email || !message || !phone) {
                 alert('Please fill in all required fields.');
                 return;
             }
             
-            const notificationBody = 'Name: ' + name + '\nEmail: ' + email + (company ? '\nCompany: ' + company : '') + (phone ? '\nPhone: ' + phone : '') + '\nMessage: ' + message;
+            const notificationBody = 'Name: ' + name + '\nEmail: ' + email + (company ? '\nCompany: ' + company : '') + '\nPhone: ' + phone + '\nRequests FREE AUDIT: ' + (requestAudit ? 'YES ✅' : 'No') + '\nMessage: ' + message;
             
             fetch('https://ntfy.sh/Call_incoming', {
                 method: 'POST',
