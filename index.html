@@ -10,6 +10,10 @@
     <meta name="author" content="Claydom">
     <meta name="robots" content="index, follow">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
         * {
             margin: 0;
@@ -18,10 +22,10 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #1a1a1a;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: #ffffff;
         }
 
         .container {
@@ -32,14 +36,16 @@
 
         /* Header */
         header {
-            background: linear-gradient(135deg, #2a2a2a 0%, #3d3d3d 100%);
-            color: white;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            color: #2c3e50;
             padding: 1rem 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
         }
 
         nav {
@@ -50,13 +56,13 @@
 
         .logo {
             font-size: 1.8rem;
-            font-weight: bold;
-            color: #e91e63;
+            font-weight: 700;
+            color: #be185d;
             transition: color 0.3s ease;
         }
 
         .logo:hover {
-            color: #f48fb1;
+            color: #ec4899;
         }
 
         .nav-links {
@@ -66,14 +72,14 @@
         }
 
         .nav-links a {
-            color: white;
+            color: #64748b;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
         }
 
         .nav-links a:hover {
-            color: #e91e63;
+            color: #be185d;
         }
 
         /* Demo Widget */
@@ -81,28 +87,28 @@
             display: inline-flex;
             align-items: center;
             gap: 1rem;
-            background: rgba(233, 30, 99, 0.1);
-            border: 1px solid rgba(233, 30, 99, 0.3);
-            border-radius: 25px;
+            background: rgba(190, 24, 93, 0.05);
+            border: 1px solid rgba(190, 24, 93, 0.2);
+            border-radius: 12px;
             padding: 1rem 2rem;
             margin-top: 2rem;
             transition: all 0.3s;
         }
 
         .demo-widget:hover {
-            background: rgba(233, 30, 99, 0.15);
+            background: rgba(190, 24, 93, 0.08);
             transform: translateY(-2px);
         }
 
         .demo-label {
             font-size: 0.9rem;
             font-weight: bold;
-            color: #f48fb1;
+            color: #be185d;
             letter-spacing: 1px;
         }
 
         .demo-phone {
-            color: white;
+            color: #1e293b;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.1rem;
@@ -110,27 +116,34 @@
         }
 
         .demo-phone:hover {
-            color: #f48fb1;
+            color: #ec4899;
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
-            color: white;
-            padding: 120px 0 80px;
+            background: 
+                linear-gradient(135deg, rgba(253, 242, 248, 0.85) 0%, rgba(248, 250, 252, 0.85) 50%, rgba(226, 232, 240, 0.85) 100%),
+                url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2128&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #1e293b;
+            padding: 140px 0 100px;
             text-align: center;
         }
 
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
-            font-weight: 700;
+            font-weight: 800;
+            letter-spacing: -0.02em;
         }
 
         .hero .subtitle {
             font-size: 1.3rem;
             margin-bottom: 2rem;
-            color: #f48fb1;
+            color: #be185d;
+            font-weight: 600;
         }
 
         .hero p {
@@ -139,38 +152,40 @@
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
-            opacity: 0.9;
+            opacity: 0.8;
+            font-weight: 400;
         }
 
         .cta-button {
             display: inline-block;
-            background: linear-gradient(45deg, #e91e63, #f48fb1);
+            background: linear-gradient(45deg, #be185d, #ec4899);
             color: white;
             padding: 15px 40px;
-            border-radius: 50px;
+            border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
             font-size: 1.1rem;
             transition: all 0.3s;
-            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+            box-shadow: 0 4px 16px rgba(190, 24, 93, 0.25);
         }
 
         .cta-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(233, 30, 99, 0.4);
+            box-shadow: 0 8px 25px rgba(190, 24, 93, 0.35);
         }
 
         /* Services Section */
         .services {
-            padding: 80px 0;
-            background: #1a1a1a;
+            padding: 100px 0;
+            background: #ffffff;
         }
 
         .section-title {
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 3rem;
-            color: white;
+            color: #1e293b;
+            font-weight: 700;
         }
 
         .services-grid {
@@ -181,37 +196,38 @@
         }
 
         .service-card {
-            background: #2a2a2a;
+            background: #ffffff;
             padding: 2.5rem;
-            border-radius: 15px;
+            border-radius: 12px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
             transition: all 0.3s;
-            border: 1px solid #3d3d3d;
+            border: 1px solid #e2e8f0;
         }
 
         .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(233, 30, 99, 0.2);
-            background: #333;
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(190, 24, 93, 0.15);
+            background: #fdf2f8;
         }
 
         .service-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
-            color: white;
+            color: #1e293b;
+            font-weight: 600;
         }
 
         .service-card p {
-            color: #ccc;
-            line-height: 1.6;
+            color: #64748b;
+            line-height: 1.7;
         }
 
         /* Voice Focus Section */
         .voice-focus {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
-            color: white;
+            padding: 100px 0;
+            background: linear-gradient(135deg, #fdf2f8 0%, #f1f5f9 50%, #e2e8f0 100%);
+            color: #1e293b;
             text-align: center;
         }
 
@@ -223,28 +239,31 @@
         }
 
         .voice-feature {
-            background: rgba(233, 30, 99, 0.1);
+            background: #ffffff;
             padding: 2rem;
             border-radius: 10px;
-            border: 1px solid rgba(233, 30, 99, 0.2);
+            border: 1px solid rgba(190, 24, 93, 0.1);
             transition: all 0.3s;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
         }
 
         .voice-feature:hover {
-            background: rgba(233, 30, 99, 0.15);
+            background: #fdf2f8;
             transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(190, 24, 93, 0.12);
         }
 
         .voice-feature h4 {
             font-size: 1.3rem;
             margin-bottom: 1rem;
-            color: #f48fb1;
+            color: #be185d;
+            font-weight: 600;
         }
 
         /* Results Section */
         .results {
-            padding: 80px 0;
-            background: #1a1a1a;
+            padding: 100px 0;
+            background: #ffffff;
         }
 
         .results-grid {
@@ -255,55 +274,56 @@
         }
 
         .result-card {
-            background: #2a2a2a;
-            border-radius: 15px;
+            background: #ffffff;
+            border-radius: 12px;
             padding: 2.5rem 2rem;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
             transition: all 0.3s;
-            border: 1px solid #3d3d3d;
+            border: 1px solid #e2e8f0;
         }
 
         .result-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(233, 30, 99, 0.2);
-            background: #333;
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(190, 24, 93, 0.15);
+            background: #fdf2f8;
         }
 
         .result-number {
             font-size: 3rem;
-            font-weight: bold;
-            color: #e91e63;
+            font-weight: 800;
+            color: #be185d;
             margin-bottom: 0.5rem;
         }
 
         .result-label {
             font-size: 1.2rem;
             font-weight: 600;
-            color: #f48fb1;
+            color: #ec4899;
             margin-bottom: 1rem;
         }
 
         .result-card p {
-            color: #ccc;
-            line-height: 1.6;
+            color: #64748b;
+            line-height: 1.7;
         }
 
         /* Calculator Section */
         .calculator {
-            padding: 80px 0;
-            background: #2a2a2a;
-            color: white;
+            padding: 100px 0;
+            background: linear-gradient(135deg, #fdf2f8 0%, #f1f5f9 50%, #e2e8f0 100%);
+            color: #1e293b;
             text-align: center;
         }
 
         .calculator-form {
             max-width: 600px;
             margin: 3rem auto 0;
-            background: #3d3d3d;
+            background: #ffffff;
             padding: 3rem;
-            border-radius: 15px;
-            border: 1px solid #555;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
 
         .calc-row {
@@ -320,7 +340,7 @@
         }
 
         .calc-input label {
-            color: #f48fb1;
+            color: #be185d;
             font-weight: 600;
             font-size: 0.9rem;
         }
@@ -328,11 +348,11 @@
         .calc-input input, .calc-input select {
             padding: 12px;
             border: none;
-            border-radius: 5px;
+            border-radius: 6px;
             font-size: 1rem;
-            background: #1a1a1a;
-            color: white;
-            border: 1px solid #666;
+            background: #f8fafc;
+            color: #1e293b;
+            border: 1px solid #cbd5e1;
         }
 
         .calc-checkbox {
@@ -348,10 +368,10 @@
 
         .calc-button {
             padding: 15px 40px;
-            background: linear-gradient(45deg, #e91e63, #f48fb1);
+            background: linear-gradient(45deg, #be185d, #ec4899);
             color: white;
             border: none;
-            border-radius: 50px;
+            border-radius: 8px;
             font-size: 1.1rem;
             font-weight: 600;
             cursor: pointer;
@@ -361,30 +381,30 @@
 
         .calc-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+            box-shadow: 0 8px 25px rgba(190, 24, 93, 0.3);
         }
 
         .calc-results {
             display: none;
-            background: rgba(233, 30, 99, 0.1);
-            border: 1px solid rgba(233, 30, 99, 0.3);
-            border-radius: 15px;
+            background: rgba(190, 24, 93, 0.05);
+            border: 1px solid rgba(190, 24, 93, 0.15);
+            border-radius: 12px;
             padding: 2rem;
             margin-top: 2rem;
         }
 
         .savings-amount {
             font-size: 2.5rem;
-            font-weight: bold;
-            color: #e91e63;
+            font-weight: 800;
+            color: #be185d;
             margin-bottom: 1rem;
         }
 
         /* Contact Section */
         .contact {
-            padding: 80px 0;
-            background: #2a2a2a;
-            color: white;
+            padding: 100px 0;
+            background: #ffffff;
+            color: #1e293b;
             text-align: center;
         }
 
@@ -405,24 +425,24 @@
         .contact-form textarea {
             padding: 15px;
             border: none;
-            border-radius: 5px;
+            border-radius: 6px;
             font-size: 1rem;
-            background: #3d3d3d;
-            color: white;
-            border: 1px solid #555;
+            background: #f8fafc;
+            color: #1e293b;
+            border: 1px solid #cbd5e1;
         }
 
         .contact-form input::placeholder,
         .contact-form textarea::placeholder {
-            color: #aaa;
+            color: #94a3b8;
         }
 
         .contact-form button {
             padding: 15px 30px;
-            background: linear-gradient(45deg, #e91e63, #f48fb1);
+            background: linear-gradient(45deg, #be185d, #ec4899);
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             font-size: 1.1rem;
             font-weight: 600;
             cursor: pointer;
@@ -431,21 +451,21 @@
 
         .contact-form button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+            box-shadow: 0 8px 25px rgba(190, 24, 93, 0.3);
         }
 
         .audit-highlight {
-            background: rgba(233, 30, 99, 0.1);
-            border: 2px solid rgba(233, 30, 99, 0.4);
-            border-radius: 15px;
+            background: rgba(190, 24, 93, 0.05);
+            border: 2px solid rgba(190, 24, 93, 0.2);
+            border-radius: 12px;
             padding: 2rem;
             margin-bottom: 2rem;
             animation: glow 2s ease-in-out infinite alternate;
         }
 
         @keyframes glow {
-            from { box-shadow: 0 0 5px rgba(233, 30, 99, 0.2); }
-            to { box-shadow: 0 0 20px rgba(233, 30, 99, 0.4); }
+            from { box-shadow: 0 0 5px rgba(190, 24, 93, 0.15); }
+            to { box-shadow: 0 0 20px rgba(190, 24, 93, 0.3); }
         }
 
         .audit-checkbox {
@@ -457,42 +477,43 @@
 
         .audit-checkbox input[type="checkbox"] {
             transform: scale(1.5);
-            accent-color: #e91e63;
+            accent-color: #be185d;
         }
 
         .audit-checkbox label {
             font-size: 1.2rem;
             font-weight: 600;
-            color: #f48fb1;
+            color: #be185d;
         }
 
         .thank-you-message {
             text-align: center;
             padding: 3rem 2rem;
-            background: rgba(233, 30, 99, 0.1);
-            border: 1px solid rgba(233, 30, 99, 0.3);
-            border-radius: 15px;
+            background: rgba(190, 24, 93, 0.05);
+            border: 1px solid rgba(190, 24, 93, 0.15);
+            border-radius: 12px;
         }
 
         .thank-you-message h3 {
             font-size: 2rem;
-            color: #f48fb1;
+            color: #be185d;
             margin-bottom: 1rem;
+            font-weight: 700;
         }
 
         .thank-you-message p {
-            color: #ccc;
+            color: #64748b;
             margin-bottom: 1rem;
             font-size: 1.1rem;
         }
 
         /* Footer */
         footer {
-            background: #1a1a1a;
-            color: white;
+            background: #f8fafc;
+            color: #64748b;
             text-align: center;
-            padding: 2rem 0;
-            border-top: 1px solid #3d3d3d;
+            padding: 3rem 0;
+            border-top: 1px solid #e2e8f0;
         }
 
         /* Mobile Responsive */
@@ -526,6 +547,11 @@
                 padding: 2rem 1.5rem;
             }
 
+            /* Hide extra service cards on mobile - show only first one */
+            .service-card:nth-child(n+2) {
+                display: none;
+            }
+
             .demo-widget {
                 flex-direction: column;
                 gap: 0.5rem;
@@ -541,6 +567,11 @@
                 padding: 1.5rem;
             }
 
+            /* Hide extra voice features on mobile - show only first one */
+            .voice-feature:nth-child(n+2) {
+                display: none;
+            }
+
             .results-grid {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
@@ -548,6 +579,11 @@
 
             .result-card {
                 padding: 2rem 1.5rem;
+            }
+
+            /* Hide extra result cards on mobile - show only first one */
+            .result-card:nth-child(n+2) {
+                display: none;
             }
 
             .result-number {
@@ -819,7 +855,7 @@
                 <button type="button" class="calc-button" onclick="calculateEstimate()">Get My Estimate</button>
                 <div id="calcResults" class="calc-results">
                     <div class="savings-amount" id="savingsAmount">$0</div>
-                    <p><strong>Monthly Cost Estimate</strong></p>
+                    <p><strong>Monthly Savings Estimate</strong></p>
                     <p>Based on your current call volume and automation requirements</p>
                     <p style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.8;">
                         Estimate based on industry averages and typical automation deployment
@@ -857,7 +893,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Claydom. All rights reserved. AI Voice Marketing Solutions - Dallas, Texad</p>
+            <p>&copy; 2024 Claydom. All rights reserved. AI Voice Marketing Solutions - Wichita, Kansas</p>
         </div>
     </footer>
 
@@ -907,12 +943,12 @@
                 return;
             }
 
-            // Complex calculation to hide the $1/call baseline
+            // Calculate AI automation cost vs current staffing
             const currentMonthlyCost = staffCost;
+            const aiAutomationCost = currentCalls * 2 * businessType; // $2 per call
             
-            // AI automation efficiency (60-80% cost reduction)
-            const automationEfficiency = 0.7 * businessType;
-            const monthlySavings = currentMonthlyCost * automationEfficiency;
+            // Show cost comparison
+            const monthlySavings = Math.max(0, currentMonthlyCost - aiAutomationCost);
 
             document.getElementById('savingsAmount').textContent = '$' + Math.round(monthlySavings).toLocaleString();
             document.getElementById('calcResults').style.display = 'block';
@@ -974,9 +1010,11 @@
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
-                header.style.background = 'rgba(42, 42, 42, 0.95)';
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.backdropFilter = 'blur(20px)';
             } else {
-                header.style.background = 'linear-gradient(135deg, #2a2a2a 0%, #3d3d3d 100%)';
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
             }
         });
     </script>
